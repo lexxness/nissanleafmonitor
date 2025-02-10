@@ -6,7 +6,7 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/ваш_репозиторий/nissan_leaf_obd.git
+   git clone https://github.com/nissanleafmonitor/nissan_leaf_obd.git
    ```
 
 2. Откройте проект в Android Studio.
@@ -31,7 +31,7 @@
              jcenter()
          }
          dependencies {
-             classpath 'com.android.tools.build:gradle:4.1.0' // Замените на актуальную версию
+             classpath 'com.android.tools.build:gradle:7.2.0' // Замените на актуальную версию?
          }
      }
 
