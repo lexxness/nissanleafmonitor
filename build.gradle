@@ -1,0 +1,27 @@
+android {
+    compileSdkVersion 33 // Убедитесь, что версия актуальна
+    defaultConfig {
+        applicationId "com.example.nissanleafobd"
+        minSdkVersion 21 // Убедитесь, что версия актуальна
+        targetSdkVersion 33 // Убедитесь, что версия актуальна
+        versionCode 1
+        versionName "1.0"
+        // Добавьте следующую строку для перезагрузки файла сборки
+        // Это может помочь устранить ошибку
+        // reload() // Раскомментируйте, если необходимо
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation files('C:/1/libs/obd-java-api.jar')
+    implementation files('C:/1/libs/LoggingInterceptor.jar')
+    implementation 'androidx.appcompat:appcompat:1.6.1' // Обновите до последней версии
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.core:core-ktx:1.10.0' // Обновите до последней версии
+} 
