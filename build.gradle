@@ -1,14 +1,32 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.2.0'
+    }
+}
+
+plugins {
+    id 'com.android.application'
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
 android {
-    compileSdkVersion 33 // Убедитесь, что версия актуальна
+    compileSdkVersion 34
     defaultConfig {
         applicationId "com.example.nissanleafobd"
-        minSdkVersion 21 // Убедитесь, что версия актуальна
-        targetSdkVersion 33 // Убедитесь, что версия актуальна
+        minSdkVersion 27
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
-        // Добавьте следующую строку для перезагрузки файла сборки
-        // Это может помочь устранить ошибку
-        // reload() // Раскомментируйте, если необходимо
     }
     buildTypes {
         release {
@@ -21,7 +39,7 @@ android {
 dependencies {
     implementation files('C:/1/libs/obd-java-api.jar')
     implementation files('C:/1/libs/LoggingInterceptor.jar')
-    implementation 'androidx.appcompat:appcompat:1.6.1' // Обновите до последней версии
+    implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    implementation 'androidx.core:core-ktx:1.10.0' // Обновите до последней версии
+    implementation 'androidx.core:core-ktx:1.10.0'
 } 
